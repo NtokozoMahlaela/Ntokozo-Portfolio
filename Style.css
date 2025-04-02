@@ -1,5 +1,5 @@
 :root {
-    --primary: #555408;       /* Deep blue - replaces purple */
+    --primary: #09b4c0;       /* Deep blue - replaces purple */
     --secondary: #171544;     /* Keeping this dark navy as it's neutral */
     --accent: #117088;        /* Burnt orange/red - strong accent */
     --light: #F8F9FA;         /* Keeping light background */
@@ -600,12 +600,6 @@ section:nth-child(even) {
     font-weight: 500;
 }
 
-.skill-bar {
-    height: 10px;
-    background: #e9ecef;
-    border-radius: 5px;
-    overflow: hidden;
-}
 
 .skill-progress {
     height: 100%;

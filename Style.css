@@ -33,6 +33,8 @@ h1, h2, h3, h4 {
     padding: 0 20px;
 }
 
+ 
+
 /* Animated Gradient Header */
 header {
     background: linear-gradient(-45deg, var(--secondary), var(--primary), var(--accent), var(--secondary));
@@ -498,6 +500,7 @@ section:nth-child(even) {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Interests Section */
 .interests-container {

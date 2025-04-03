@@ -95,5 +95,4 @@
       }
   };
   
-  
   window.addEventListener('scroll', animateSkills);

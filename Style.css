@@ -349,6 +349,13 @@ h1 {
     gap: 1rem;
 }
 
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    gap: 15px; /* Adds spacing between icons */
+}
+
 .social-links a {
     color: white;
     background: rgba(255, 255, 255, 0.2);

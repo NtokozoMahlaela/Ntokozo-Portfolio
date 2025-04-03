@@ -97,4 +97,49 @@
   
   window.addEventListener('scroll', animateSkills);
 
-  
+  // Mobile menu functionality
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+const mobileOverlay = document.getElementById('mobileOverlay');
+
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileOverlay.classList.toggle('active');
+    mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? 
+        '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+});
+
+mobileOverlay.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+});
+
+// Optimize animations for mobile
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (reduceMotion || window.innerWidth < 768) {
+    // Disable or simplify animations for mobile or users who prefer reduced motion
+    document.querySelectorAll('[class*="animation"], [class*="transition"]').forEach(el => {
+        el.style.animation = 'none';
+        el.style.transition = 'none';
+    });
+    
+    // Simplify particle animation
+    document.querySelectorAll('.particle').forEach(particle => {
+        particle.style.animation = 'none';
+        particle.style.opacity = '0.2';
+    });
+}
+
+// Rest of your existing JS remains the same
+// ...

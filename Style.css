@@ -961,12 +961,69 @@ footer::before {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive Design */
-@media (max-width: 992px) {
+/* Mobile First Approach */
+@media (max-width: 767px) {
+    /* Navigation */
+    .navbar {
+        padding: 1rem 0;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    /* Header */
+    header {
+        padding: 2rem 0 4rem;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+    
+    .profile-img-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .contact-item {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    /* Sections */
+    section {
+        padding: 3rem 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    /* About Section */
     .about-content {
         flex-direction: column;
     }
     
+    .about-image {
+        margin-top: 2rem;
+        transform: none !important;
+    }
+    
+    /* Timeline */
     .timeline::before {
         left: 31px;
     }
@@ -989,51 +1046,110 @@ footer::before {
     .timeline-item:nth-child(even) .timeline-content {
         margin: 0 0 0 30px;
     }
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
     
-    .tagline {
-        font-size: 1.1rem;
-    }
-    
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-    
+    /* Projects */
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    /* Skills */
+    .skills-container {
+        flex-direction: column;
     }
     
     .skill-category {
         min-width: 100%;
     }
+    
+    /* Contact Form */
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    /* Footer */
+    footer {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+        padding: 2rem 0;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    /* Back to top button */
+    .back-to-top {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
 }
 
-@media (max-width: 576px) {
-    header {
-        padding: 3rem 0 5rem;
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
     }
     
     .profile-img-container {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .section-title h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .timeline-content {
+        padding: 1.2rem;
+    }
+    
+    .interest-card {
+        width: 140px;
         padding: 1.5rem;
+    }
+    
+    .interest-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Very Small Mobile Devices (up to 360px) */
+@media (max-width: 360px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    .nav-links {
+        width: 90%;
+    }
+    
+    .profile-img-container {
+        width: 120px;
+        height: 120px;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .interest-card {
+        width: 120px;
+        padding: 1rem;
     }
 }

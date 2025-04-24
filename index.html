@@ -2,24 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Ntokozo Mahlaela | IT Professional</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
-    
 </head>
 <body>
+   <!-- Navigation -->
+   <div class="container">
+       <nav class="navbar">
+           <div class="logo">Ntokozo Mahlaela</div>
+           <button class="mobile-menu-btn" id="mobileMenuBtn">
+               <i class="fas fa-bars"></i>
+           </button>
+           <div class="nav-links" id="navLinks">
+               <a href="#about">About</a>
+               <a href="#experience">Experience</a>
+               <a href="#projects">Projects</a>
+               <a href="#skills">Skills</a>
+               <a href="#contact">Contact</a>
+           </div>
+       </nav>
+       <div class="mobile-overlay" id="mobileOverlay"></div>
+   </div>
+   
     <!-- Animated Gradient Header -->
     <header>
         <div class="particles" id="particles"></div>
         <div class="container">
             <div class="header-content">
                 <div class="profile-img-container">
-                    <img src="https://via.placeholder.com/180" alt="Ntokozo Mahlaela" class="profile-img">
+                    <img src="/Images/image.png" alt="Ntokozo Mahlaela" class="profile-img">
                 </div>
                 <h1>Ntokozo Mahlaela</h1>
-                <p class="tagline">Information Technology Graduate | Frontend Developer | Data Analyst</p>
+                <p class="tagline">Aspiring Software Developer | Frontend Developer | Web Developer</p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -35,10 +52,9 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ntokozo-mahlaela-3b4317250"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/NtokozoMahlaela"><i class="fab fa-github"></i></a>
+                  
                 </div>
             </div>
         </div>
@@ -53,13 +69,18 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am an Information Technology graduate from IIE Rosebank College with extensive computer knowledge in Frontend Development, IT Support, Data Analytics, advanced MS Excel, networking, and cloud technologies.</p>
+                    <p>I am an Information Technology graduate from IIE Rosebank College with extensive computer knowledge in Software Development, Frontend Development,Web Development ,IT Support, Networking.</p>
                     <p>I excel in prioritizing tasks, collaborating with team members, and developing effective technical solutions. With strong communication skills, technical expertise, and interpersonal abilities, I am confident in my ability to contribute meaningfully to any organization.</p>
                     <p>My hands-on experience as a Software Development Intern at UVU Africa CapaCiti has further enhanced my problem-solving and coding skills while working with modern technologies to build and optimize applications.</p>
                     <div class="skills-highlight">
+                        <br>
                         <h4>Key Skills:</h4>
                         <ul>
-                            <li>Frontend Development (HTML, CSS, JavaScript, React)</li>
+                            <li>Frontend Development (HTML, CSS, JavaScript, React.js)</li>
+                            <li>Backend Development (Node.js, Express, Firebase)</li>
+                            <li>Software Development (Java,Phyton,Springboot)</li>
+                            <li>Version Control (Git, GitHub)</li>
+                            <li>Database Management (SQL, MongoDB)</li>
                             <li>Data Analysis & Visualization</li>
                             <li>Advanced Excel & Database Management</li>
                             <li>Cloud Technologies (Microsoft Azure)</li>
@@ -83,19 +104,21 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">Dec 2023 - Present</div>
+                        <div class="timeline-date">Dec 2024 - Present</div>
                         <h3>Software Development Intern</h3>
                         <div class="timeline-company">UVU Africa CapaCiti</div>
                         <ul>
                             <li>Gaining hands-on experience in software development</li>
-                            <li>Focusing on web development and software testing automation</li>
-                            <li>Working with data analytics foundations</li>
+                            <li>Focusing on web development ,software development</li>
+                            <li>Creating Movie Database</li>
+                            <li>Collaborating with team members to build a Banking System</li>
+                            <li>Learning about AI</li>
                             <li>Building and optimizing applications with modern technologies</li>
                             <li>Enhancing problem-solving and coding skills</li>
                         </ul>
                     </div>
                 </div>
-                <!-- Add more timeline items as needed -->
+               
             </div>
         </div>
     </section>
@@ -110,56 +133,42 @@
             <div class="projects-grid">
                 <div class="project-card" style="--order: 1">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Project 1">
+                        <img src="/Project images/IMG-20250325-WA0005.jpg" alt="Project 1">
                         <div class="project-tags">
                             <span class="project-tag">React</span>
                             <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Firebase</span>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>E-commerce Dashboard</h3>
-                        <p>A comprehensive dashboard for e-commerce businesses with analytics, inventory management, and customer insights.</p>
+                        <h3>XStream Database</h3>
+                        <p>XStream is a React.js-based web application that allows users to browse movies by genre, category, or search, view movie details and trailers, and manage a personalized "My List" of favorite movies. It integrates Firebase for user authentication and uses local storage to persist user-specific movie lists across sessions.</p>
                         <div class="project-links">
-                            <a href="#" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link code"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://movie-online-roan.vercel.app/" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Software-Development-Capaciti/Movie-database.git" class="project-link code"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card" style="--order: 2">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Project 2">
+                        <img src="/Images/To-do-list.PNG" alt="Project 2">
                         <div class="project-tags">
+                            <span class="project-tag">Html,CSS</span>
                             <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">Node.js</span>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Financial Analytics Tool</h3>
-                        <p>Interactive financial data visualization tool that helps users analyze market trends and make informed decisions.</p>
+                        <h3>To-Do-List</h3>
+                        <p>A simple and responsive To Do List application that helps users add, edit, delete, and organize tasks efficiently. Tasks are stored locally in the browser or can be connected to Firebase for authenticationand storage.</p>
                         <div class="project-links">
-                            <a href="#" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link code"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://ntokozomahlaela.github.io/To-Do-List-master/" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/NtokozoMahlaela/To-Do-List-master.git" class="project-link code"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-card" style="--order: 3">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Project 3">
-                        <div class="project-tags">
-                            <span class="project-tag">HTML/CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive portfolio website template with modern design elements and smooth animations.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="project-link code"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
+               
                 </div>
             </div>
         </div>
@@ -178,7 +187,7 @@
                         <div class="timeline-date">2022 - 2024</div>
                         <h3>Diploma in Information Technology</h3>
                         <div class="timeline-company">IIE Rosebank College</div>
-                        <p>Third year student with comprehensive knowledge in various IT disciplines including programming, networking, and systems analysis.</p>
+                        <p>IT Graduate with Distinctions with comprehensive knowledge in various IT disciplines including programming, networking, and systems analysis.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -211,10 +220,10 @@
                 
                 <div class="interest-card" style="--order: 2">
                     <div class="interest-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-chess-king"></i>
                     </div>
-                    <h3>Data Science</h3>
-                    <p>Analyzing data to uncover insights</p>
+                    <h3>Chess</h3>
+                    <p>I am a Provisional Chess Player</p>
                 </div>
                 
                 <div class="interest-card" style="--order: 3">
@@ -253,136 +262,114 @@
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3>Technical Skills</h3>
+                    <h3><i class="fas fa-code fa-lg" style="color: #333; font-size: 1.5em;"></i> Technical Skills</h3>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>HTML/CSS/JavaScript</span>
-                            <span>90%</span>
+                            <span><i class="fab fa-html5 fa-lg" style="color: #E34F26; font-size: 1.5em;"></i> HTML</span>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
+                        <div class="skill-name">
+                            <span><i class="fab fa-css3-alt fa-lg" style="color: #1572B6; font-size: 1.5em;"></i> CSS</span>
+                        </div>
+                        <div class="skill-name">
+                            <span><i class="fab fa-js-square fa-lg" style="color: #F7DF1E; font-size: 1.5em;"></i> JavaScript</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>React</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
+                            <span><i class="fab fa-react fa-lg" style="color: #61DAFB; font-size: 1.5em;"></i> React</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Node.js</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
+                            <span><i class="fab fa-node-js fa-lg" style="color: #339933; font-size: 1.5em;"></i> Node.js</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Advanced Excel</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%;"></div>
+                            <span><i class="fas fa-file-excel fa-lg" style="color: #217346; font-size: 1.5em;"></i> Advanced Excel</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>SQL/MySQL/MongoDB</span>
-                            <span>80%</span>
+                            <span><i class="fas fa-database fa-lg" style="color: #00758F; font-size: 1.5em;"></i> SQL</span>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
+                        <div class="skill-name">
+                            <span><i class="fas fa-server fa-lg" style="color: #47A248; font-size: 1.5em;"></i> MongoDB</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Additional Skills</h3>
+                    <h3><i class="fas fa-plus-circle fa-lg" style="color: #333; font-size: 1.5em;"></i> Additional Skills</h3>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Microsoft Azure</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
+                            <span><i class="fab fa-microsoft fa-lg" style="color: #0078D4; font-size: 1.5em;"></i> Microsoft Azure</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Data Analysis</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
+                            <span><i class="fas fa-code fa-lg" style="color: #007ACC; font-size: 1.5em;"></i> VS Code</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>UI/UX Design</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
+                            <span><i class="fas fa-chart-bar fa-lg" style="color: #4E73DF; font-size: 1.5em;"></i> Data Analysis</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Git Version Control</span>
-                            <span>80%</span>
+                            <span><i class="fab fa-git-alt fa-lg" style="color: #F05032; font-size: 1.5em;"></i> Git</span>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span><i class="fas fa-code-branch fa-lg" style="color: #F05032; font-size: 1.5em;"></i> Git Version Control</span>
                         </div>
                     </div>
                 </div>
                 
+                
                 <div class="skill-category">
-                    <h3>Soft Skills</h3>
+                    <h3><i class="fas fa-users fa-lg" style="color: #333; font-size: 1.5em;"></i> Soft Skills</h3>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Communication</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%;"></div>
+                            <span><i class="fas fa-comments fa-lg" style="color: #25D366; font-size: 1.5em;"></i> Communication</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Teamwork</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
+                            <span><i class="fas fa-people-arrows fa-lg" style="color: #4267B2; font-size: 1.5em;"></i> Teamwork</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Problem Solving</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
+                            <span><i class="fas fa-lightbulb fa-lg" style="color: #FFC107; font-size: 1.5em;"></i> Problem Solving</span>
                         </div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>Adaptability</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
+                            <span><i class="fas fa-random fa-lg" style="color: #17A2B8; font-size: 1.5em;"></i> Adaptability</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <style>
+        /* Additional styling to ensure proper spacing with larger icons */
+        .skill-name i {
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .skill-name span {
+            display: inline-flex;
+            align-items: center;
+        }
+        h3 i {
+            margin-right: 10px;
+        }
+    </style>
     
     <!-- Certifications Section -->
     <section id="certifications">
@@ -394,42 +381,89 @@
             <div class="projects-grid">
                 <div class="project-card" style="--order: 1">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Certification 1">
+                        <img src="/Images/Intro to Software.jpeg" alt="Certification 1">
                     </div>
                     <div class="project-info">
                         <h3>Introduction to Software Development</h3>
                         <div class="timeline-company">Amazon</div>
                         <p>Fundamentals of software development processes and methodologies.</p>
                         <div class="project-links">
-                            <a href="#" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
+                            <a href="/Certificate pdf/Coursera ZFWV3EAY5PMV.pdf" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card" style="--order: 2">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" alt="Certification 2">
+                        <img src="/Images/CERTIFICATE_LANDING_PAGE~G1PBRDQB5XFC.jpeg" alt="Certification 2">
                     </div>
                     <div class="project-info">
                         <h3>Introduction to Software Engineering</h3>
                         <div class="timeline-company">IBM</div>
                         <p>Core concepts of software engineering and best practices in the industry.</p>
                         <div class="project-links">
-                            <a href="#" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
+                            <a href="/Certificate pdf/Coursera G1PBRDQB5XFC.pdf" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card" style="--order: 3">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Certification 3">
+                        <img src="/Images/programing with java.jpeg" alt="Certification 3">
                     </div>
                     <div class="project-info">
-                        <h3>Professional Development</h3>
-                        <div class="timeline-company">Coursera</div>
-                        <p>Skills development in workplace communication, teamwork, and professional growth.</p>
+                        <h3>Programming with Java</h3>
+                        <div class="timeline-company">Amazon</div>
+                        <p>Gained skills in Java programming, including object-oriented principles, control structures.</p>
                         <div class="project-links">
-                            <a href="#" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
+                            <a href="/Certificate pdf/Programming with java.pdf" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" style="--order: 1">
+                    <div class="project-image">
+                        <img src="/Images/Building AI.jpeg" alt="Certification 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Building AI Powered Chatbots Without
+                            Programming</h3>
+                        <div class="timeline-company">IBM</div>
+                        <p>Gained expertise in designing conversational flows, implementing natural language processing (NLP), and deploying AI-driven chat interfaces through AWS services</p>
+                        <div class="project-links">
+                            <a href="/Certificate pdf/Building AI Powered chatbot.pdf" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="project-card" style="--order: 1">
+                    <div class="project-image">
+                        <img src="/Images/Generative AI.jpeg" alt="Certification 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Generative AI: Prompt Engineering Basics</h3>
+                        <div class="timeline-company">IBM</div>
+                         <p> ✓ Strategic prompt structuring & refinement</p>
+                           <p> ✓ Context management & few-shot learning</p>
+                            <p>✓ Bias reduction & output formatting</p>
+                        <div class="project-links">
+                            <a href="/Certificate pdf/Coursera Generative AI.pdf" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="project-card" style="--order: 1">
+                    <div class="project-image">
+                        <img src="/Images/Intro to AI.jpeg" alt="Certification 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Introduction to AI</h3>
+                        <div class="timeline-company">IBM</div>
+                        <p>Gained foundational knowledge of AI concepts, including machine learning, neural networks, and real-world applications. Explored key principles of how AI systems learn, make decisions, and solve complex problems.</p>
+                        <div class="project-links">
+                            <a href="/Certificate pdf/Coursera Intro to AI.pdf" class="project-link demo"><i class="fas fa-certificate"></i> View Credential</a>
                         </div>
                     </div>
                 </div>
@@ -445,23 +479,27 @@
                 <p>Feel free to reach out for collaborations or just a friendly hello</p>
             </div>
             <div class="contact-form">
-                <form>
+                <form action="https://formspree.io/f/mgvanypd" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" class="form-control" required>
+                        <input type="text" id="name" name="name" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" class="form-control" required>
+                        <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" class="form-control" required>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" class="form-control" required></textarea>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
                     </div>
+                    <!-- Add a hidden field to specify the reply-to email -->
+                    <input type="hidden" name="_replyto" value="Ntokozomokoena07@gmail.com">
+                    <!-- Optional: Add a redirect page after submission -->
+                    <input type="hidden" name="_next" value="/thank-you.html">
                     <button type="submit" class="submit-btn">
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
@@ -483,10 +521,8 @@
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ntokozo-mahlaela-3b4317250"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/NtokozoMahlaela"><i class="fab fa-github"></i></a>
                 </div>
                 <p class="copyright">&copy; <span id="year"></span> Ntokozo Mahlaela. All rights reserved.</p>
             </div>

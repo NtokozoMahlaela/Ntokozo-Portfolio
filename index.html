@@ -499,7 +499,7 @@
                 <p>Feel free to reach out for collaborations or just a friendly hello</p>
             </div>
             <div class="contact-form">
-                <form action="https://formspree.io/f/mgvanypd" method="POST">
+                <form id="contactForm" action="https://formspree.io/f/mgvanypd" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" name="name" class="form-control" required>
@@ -516,14 +516,12 @@
                         <label for="message">Your Message</label>
                         <textarea id="message" name="message" class="form-control" required></textarea>
                     </div>
-                    <!-- Add a hidden field to specify the reply-to email -->
                     <input type="hidden" name="_replyto" value="Ntokozomokoena07@gmail.com">
-                    <!-- Optional: Add a redirect page after submission -->
-                    <input type="hidden" name="_next" value="/thank-you.html">
                     <button type="submit" class="submit-btn">
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
                 </form>
+                <div id="submitMessage" style="display: none; text-align: center; margin-top: 20px;"></div>
             </div>
         </div>
     </section>
@@ -557,7 +555,7 @@
         <i class="fas fa-arrow-up"></i>
     </div>
     <script src="Script.js"></script>
-    
+
 
 </body>
 </html>

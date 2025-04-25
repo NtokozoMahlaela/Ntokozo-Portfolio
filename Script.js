@@ -141,5 +141,43 @@ if (reduceMotion || window.innerWidth < 768) {
     });
 }
 
-// Rest of your existing JS remains the same
-// ...
+
+// Contact Form 
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const submitMessage = document.getElementById('submitMessage');
+    
+    try {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        
+        const response = await fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        if (response.ok) {
+            this.reset();
+            submitMessage.style.display = 'block';
+            submitMessage.innerHTML = '<div style="color: green; padding: 15px;">Thank you! Your message has been sent successfully.</div>';
+        } else {
+            throw new Error('Failed to send message');
+        }
+    } catch (error) {
+        submitMessage.style.display = 'block';
+        submitMessage.innerHTML = '<div style="color: red; padding: 15px;">Sorry, there was an error sending your message. Please try again.</div>';
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        
+        // Hide the message after 5 seconds
+        setTimeout(() => {
+            submitMessage.style.display = 'none';
+        }, 5000);
+    }
+});

@@ -72,6 +72,7 @@ portfolio/
 │   ├── style.css         # Main stylesheet
 
 │   └── animations.css    # Animation-specific styles
+
 ├── js/
 
 │   ├── main.js           # Main JavaScript functionality
@@ -95,6 +96,7 @@ portfolio/
 🚀 Getting Started
 
 Prerequisites
+
 Modern web browser (Chrome, Edge)
 
 🎨 Customization Guide
@@ -157,6 +159,9 @@ This project is open source and available under the MIT License.
 📬 Contact
 
 Ntokozo Mahlaela
+
 📧 Email: Ntokozomokoena07@gmail.com
+
 📞 Phone: +27 63 737 2178
+
 📍 Pretoria, South Africa

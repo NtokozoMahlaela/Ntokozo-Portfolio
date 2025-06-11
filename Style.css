@@ -43,88 +43,119 @@ h1, h2, h3, h4 {
     padding: 1.5rem 0;
 }
 
-/* Logo */
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:wght@500;600&display=swap');
+ .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+     background-color: #dddddd
+    }
+    
+   
+    /* Adjust container to prevent content shift */
+    body {
+        padding-top: 60px; /* should match navbar height */
+    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem; /* Increased right/left padding */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #dddddd;
+}
 
+/* Adjust container to prevent content shift */
+body {
+    padding-top: 80px; /* Increased to match larger navbar */
+}
+
+/* Logo - Added margin to push right */
 .logo {
-  --primary-color: #5e4b3a; /* Rich taupe */
-  --secondary-color: #a38f78; /* Warm beige */
-  --accent-color: #c0a78e; /* Gold-ish highlight */
-  font-family: 'Marcellus', serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.8px;
-  position: relative;
-  display: inline-block;
-  cursor: default;
+    --primary-color: #5e4b3a;
+    --secondary-color: #a38f78;
+    --accent-color: #c0a78e;
+    font-family: 'Marcellus', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    position: relative;
+    display: inline-block;
+    cursor: default;
+    margin-left: 2rem; /* Push logo right */
 }
 
-.logo-inner {
-  position: relative;
-  display: inline-block;
-  color: transparent;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 50%,
-    var(--primary-color) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-size: 200% 100%;
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-/* Shimmer animation */
-.logo:hover .logo-inner {
-  background-position: 100% 0;
-  text-shadow: 0 0 8px rgba(192, 167, 142, 0.3);
-}
-
-/* Decorative underline animation */
-.logo::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -4px;
-  left: 0;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--accent-color),
-    transparent
-  );
-  transform: scaleX(0.2);
-  transform-origin: left;
-  transition: transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.logo:hover::after {
-  transform: scaleX(1);
-}
-
-/* Floating initials effect (optional) */
-.logo::before {
-  content: 'NM';
-  position: absolute;
-  font-size: 0.8em;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--accent-color);
-  opacity: 0;
-  transition: all 0.6s ease;
-}
-
-.logo:hover::before {
-  opacity: 0.6;
-  top: -20px;
-}
-
+/* Nav links - Pushed right with margin */
 .nav-links {
     display: flex;
     gap: 2rem;
+    margin-right: 2rem; /* Push nav links right */
+}
+
+/* Rest of your existing styles remain unchanged */
+.logo-inner {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(
+        90deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 50%,
+        var(--primary-color) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% 100%;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.logo:hover .logo-inner {
+    background-position: 100% 0;
+    text-shadow: 0 0 8px rgba(192, 167, 142, 0.3);
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--accent-color),
+        transparent
+    );
+    transform: scaleX(0.2);
+    transform-origin: left;
+    transition: transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.logo:hover::after {
+    transform: scaleX(1);
+}
+
+.logo::before {
+    content: 'NM';
+    position: absolute;
+    font-size: 0.8em;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-color);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.logo:hover::before {
+    opacity: 0.6;
+    top: -20px;
 }
 
 .nav-links a {
@@ -135,9 +166,8 @@ h1, h2, h3, h4 {
 }
 
 .nav-links a:hover {
-    color: #1acec5c9;  /* Change to your preferred hover color */
+    color: #1acec5c9;
 }
-
 
 /* Mobile Menu Button */
 .mobile-menu-btn {
@@ -281,7 +311,7 @@ header::before {
 }
 
 .profile-img-container::before {
-    content: "";
+    content: ""; 
     position: absolute;
     top: -50%;
     left: -50%;

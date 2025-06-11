@@ -1,7 +1,5 @@
 # 💼 Ntokozo Mahlaela's Professional Portfolio
 
-![Portfolio Screenshot](Screenshot%202025-06-11%20121225.png)
-
 ## 📌 Overview
 Welcome to my professional portfolio! This is a modern, responsive website showcasing my skills, experience, projects, and achievements as an Information Technology graduate specializing in Frontend Development and Data Analytics.
 
@@ -43,22 +41,6 @@ Welcome to my professional portfolio! This is a modern, responsive website showc
 - **Git** - Version control
 - **GitHub** - Code hosting and deployment
 
-## 📂 Project Structure
-portfolio/
-├── index.html
-├── css/
-│ ├── style.css
-│ └── animations.css
-├── js/
-│ ├── main.js
-│ └── particles.js
-└── images/
-├── profile.jpg
-├── Certificate.jpg
-├── about.jpg
-├── project1.jpg
-├── project2.jpg
-└── project3.jpg
 
 
 ## 🚀 Getting Started

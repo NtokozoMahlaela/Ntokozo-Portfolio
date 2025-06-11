@@ -70,9 +70,10 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📬 Contact
 **Ntokozo Mahlaela**  
-📧 Email: [Ntokozomokoena07@gmail.com](mailto:Ntokozomokoena07@gmail.com)  
+📧 Email: [Ntokozomahlaela@gmail.com](mailto:Ntokozomahlaela@gmail.com)  
 📞 Phone: +27 63 737 2178  
 📍 Pretoria, South Africa  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/yourprofile) 
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](www.linkedin.com/in/ntokozo-mahlaela-3b4317250
+) 
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)]((https://github.com/NtokozoMahlaela))

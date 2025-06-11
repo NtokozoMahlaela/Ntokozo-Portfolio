@@ -76,4 +76,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](www.linkedin.com/in/ntokozo-mahlaela-3b4317250
 ) 
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)]((https://github.com/NtokozoMahlaela))
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/NtokozoMahlaela)

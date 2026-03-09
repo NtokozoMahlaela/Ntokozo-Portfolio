@@ -599,6 +599,9 @@ section:nth-child(even) {
     position: relative;
     opacity: 0;
     transform: translateY(50px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card.visible {
@@ -613,7 +616,7 @@ section:nth-child(even) {
 }
 
 .project-image {
-    height: 200px;
+    height: 280px;
     overflow: hidden;
     position: relative;
 }
@@ -647,7 +650,10 @@ section:nth-child(even) {
 }
 
 .project-info {
-    padding: 1.5rem;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-info h3 {
@@ -656,13 +662,18 @@ section:nth-child(even) {
 }
 
 .project-info p {
-    color: var(--text-light);
-    margin-bottom: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.3px;
 }
 
 .project-links {
     display: flex;
     gap: 1rem;
+    margin: auto 0;
 }
 
 .project-link {
@@ -674,6 +685,8 @@ section:nth-child(even) {
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
+    flex: 1;
+    justify-content: center;
 }
 
 .project-link.demo {
@@ -690,6 +703,11 @@ section:nth-child(even) {
 .project-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-link.full-width {
+    width: 100%;
+    justify-content: center;
 }
 
 /* Interests Section */
